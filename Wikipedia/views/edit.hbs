@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="padding-left: 200px;">
+    <header>
+        <nav>
+            <a href="/catalog">Catalog</a>
+            <a href="/create">Create article</a>
+            <a href="/search">Search by name</a>
+            <a href="/search-cat">Search by category</a>
+            <a href="/">Home page</a>
+        </nav>
+    </header>
+    <h1>Edit article</h1>
+    <form action="/edit/{{old}}" method="POST">
+        <label>Old Title: </label><br><br><input type="text" name="old" value="{{old}}"><br><br>
+        <label>New Title: </label><br><br><input type="text" name="newTitle" value="{{title}}"><br><br>
+        <label>New Category: </label><br><br><input type="text" name="newCategory" value="{{category}}"><br><br>
+        <label>New Content: </label><br><br><textarea type="text" name="newContent">{{content}}</textarea><br><br>
+        <input type="submit" value="Edit article">
+    </form>
+</body>
+
+</html>

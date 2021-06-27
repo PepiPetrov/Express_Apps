@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wiki</title>
+    <link rel="stylesheet" href="/static/css/site.css">
+</head>
+
+<body>
+    <div>
+        <aside>
+            <div class="center">
+                <img class="logo" src="/static/img/logo.png" alt="logo">
+            </div>
+
+            <nav>
+                <a href="/">All Videos</a>
+                <form action="/search-title" method="POST">
+                    <p>Search by title: </p>
+                    <input type="text" name="search" name="search">
+                    <input type="submit" value="Search">
+                </form>
+                <form action="/search-cat" method="POST">
+                    <p>Search by category: </p>
+                    <input type="text" name="search" name="search">
+                    <input type="submit" value="Search">
+                </form>
+                {{#if isCookie}}
+                <a href="/create">Create New Video</a>
+                {{/if}}
+            </nav>
+        </aside>
+        <div id="container">
+            <header>
+                {{#if isCookie}}
+                <span>Welcome, {{username}}!</span>
+                <a href="/logout">[Logout]</a>
+                {{else}}
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
+                {{/if}}
+            </header>
+            <main>
+                <h1>Welcome to PVideo!</h1>
+                <section>
+                    <h2>Search results for: "{{term}}"</h2>
+                    <div class="spacer">
+                        <ul>
+                            {{#each results}}
+                            <li>
+                                <a href="/article/{{_id}}">{{title}}</a>
+                            </li>
+                            {{/each}}
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

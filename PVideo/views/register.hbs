@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wiki</title>
+    <link rel="stylesheet" href="/static/css/site.css">
+</head>
+
+<body>
+    <div>
+        <aside>
+            <div class="center">
+                <img class="logo" src="/static/img/logo.png" alt="logo">
+            </div>
+
+            <nav>
+                <a href="/">All Videos</a>
+                <form action="/search-title" method="POST">
+                    <p>Search by title: </p>
+                    <input type="text" name="search" name="search">
+                    <input type="submit" value="Search">
+                </form>
+                <form action="/search-cat" method="POST">
+                    <p>Search by category: </p>
+                    <input type="text" name="search" name="search">
+                    <input type="submit" value="Search">
+                </form>
+                {{#if isCookie}}
+                <a href="/create">Create New Video</a>
+                {{/if}}
+            </nav>
+        </aside>
+        <div id="container">
+            <header>
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
+            </header>
+            <main>
+                <h1>Welcome to PVideo!</h1>
+                
+                <section>
+                    <h2>Register</h2>
+                    <div class="spacer">
+                        <form action="/register" method="POST">
+                            <label>Username:</label>
+                            <input type="text" name="username">
+                            <label>Password:</label>
+                            <input type="password" name="password">
+                            <input type="submit" value="Register">
+                        </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

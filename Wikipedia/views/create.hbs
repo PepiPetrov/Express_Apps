@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="padding-left: 200px;">
+  <header>
+         <nav>
+        <a href="/catalog">Catalog</a>
+        <a href="/search">Search by name</a>
+        <a href="/search-cat">Search by category</a>
+        <a href="/">Home page</a>
+    </nav>
+    </header>
+    <h1>Create article</h1>
+    <form action="/create" method="POST">
+        <label>Title: </label><br><br><input type="text" name="title"><br><br>
+        <label>Category: </label><br><br><input type="text" name="category"><br><br>
+        <label>Content: </label><br><br><textarea type="text" name="content"></textarea><br><br>
+        <input type="submit" value="Create article">
+    </form>
+</body>
+
+</html>

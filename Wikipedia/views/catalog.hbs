@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+</head>
+
+<body style="padding-left: 200px;">
+    <h1>Catalog</h1>
+    <header>
+        <nav>
+            <a href="/create">Create article</a>
+            <a href="/search">Search by name</a>
+            <a href="/search-cat">Search by category</a>
+            <a href="/">Home page</a>
+            <br><br>
+        </nav>
+    </header>
+    {{#each products}}
+    <a href="/catalog/{{title}}">{{title}}</a>
+    <br>
+    {{/each}}
+</body>
+
+</html>

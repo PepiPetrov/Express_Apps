@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+</head>
+<body style="padding-left: 200px;">
+    <nav>
+        <a href="/catalog">See your todos</a>
+        <a href="/create">Create todo</a>
+        <a href="/search">Search for a todo</a>
+        <a href="/">Home page</a>
+    </nav>
+    <h1>{{title}}</h1>
+    <p>{{description}}</p>
+    <p>Is done: {{#if isDone}}yes{{else}}no{{/if}}</p>
+    <a href="/edit/{{title}}">Edit it</a> or <a href="/remove/{{title}}">remove it</a>
+</body>
+</html>

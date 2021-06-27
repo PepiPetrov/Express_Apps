@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Елегантната вселена",
+        "author": "Брайън Грийн",
+        "publisher": "Изток-Запад",
+        "year": 2018,
+        "img": "https://cdn.ozone.bg/media/catalog/product/cache/1/image/a4e40ebdc3e371adff845072e1c73f37/e/l/178205f8e87fec9d3487380d8947b66d/elegantnata-vselena-31.jpg",
+        "sn": 0,
+        "description":"Теория на суперструните и търсене на окончателната теория"
+    },
+    {
+        "title":"До края на времето",
+        "author":"Брайън Грийн",
+        "publisher":"Изток-Запад",
+        "year":2018,
+        "img":"https://iztok-zapad.eu/image/cachewebp/catalog/books/do-kraya-na-vremeto-650x1000.webp",
+        "sn":1,
+        "description":"Търсене на смисъл в една еволюираща вселена"
+    },
+    {
+        "author":"Томас Джеферсън",
+        "title":"Светлина и свобода",
+        "publisher":"Рива",
+        "year":2021,
+        "img":"https://ciela.com/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/s/v/svetlina-i-svoboda-9789543207329.jpg",
+        "sn":2,
+        "description":"Текстове на Томас Джеферсън"
+    },
+    {
+        "title":"Скритата реалност",
+        "author":"Брайън Грийн",
+        "publisher":"Изток-Запад",
+        "year":2011,
+        "img":"https://iztok-zapad.eu/image/cachewebp/catalog/books/picture_798-650x1000.webp",
+        "sn":3,
+        "description":"Паралелни вселени и фундаменталните закони на космоса"
+    },
+    {
+        "title":"Винаги има надежда",
+        "author":"Калина Петрова",
+        "publisher":"Gnezdoto",
+        "year":2016,
+        "img":"https://i1.helikon.bg/products/1510/20/201510/201510_b.jpg",
+        "sn":4,
+        "description":"Притчи"
+    }
+]
